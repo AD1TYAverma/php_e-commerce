@@ -1,0 +1,400 @@
+:root {
+    --primary-color: #581845; 
+    --secondary-color: #FFD700; 
+    --accent-color: #900C3F; 
+    --light-bg: #F8F9FA;
+    --dark-text: #333;
+    --font-family-main: 'Poppins', sans-serif;
+    --font-family-logo: 'Garamond', serif;
+}
+/* Scrollbar width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+    background: var(--light-bg);
+}
+
+/* Thumb (jo scroll hota hai) */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+    background: #3d0f2b;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Garamond:wght@400;700&display=swap');
+
+body {
+    font-family: var(--font-family-main);
+    color: var(--dark-text);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+
+.navbar {
+    background-color: #fff; 
+    border-bottom: 1px solid var(--light-bg);
+}
+
+.gleam-logo {
+    height: 50px; 
+    object-fit: contain;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--dark-text) !important;
+    margin: 0 5px;
+    padding: 8px 15px !important;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--primary-color) !important;
+    background-color: rgba(88, 24, 69, 0.05); 
+}
+
+
+.fa-cart-shopping {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.nav-link sup {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    position: relative;
+    top: -5px;
+    left: -2px;
+}
+
+
+.btn-custom {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+}
+
+
+.form-control:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0rem rgba(88, 24, 69, 0.25) !important;
+    outline: none !important;
+}
+
+
+.hero-banner {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: #fff;
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: var(--light-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h4 {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 8px 0;
+    color: var(--dark-text);
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.sidebar li a:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 5px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* .card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+} */
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-height: 48px; 
+}
+
+.card-price {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.btn-add-to-cart {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-add-to-cart:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    margin-top: auto;
+    border-top: 5px solid var(--secondary-color);
+}
+
+.footer p {
+    margin-bottom: 0;
+    padding: 3px 0;
+    font-size: 0.9rem;
+}
+
+.toast-notification {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: left;
+    border-radius: 5px;
+    padding: 16px 20px;
+    position: fixed;
+    z-index: 1050;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+}
+
+.toast-notification.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast-notification.hide {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.toast-icon {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+.toast-title {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #eee;
+    }
+    .navbar-nav {
+        margin-bottom: 10px;
+    }
+    .hero-banner {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    .sidebar {
+        margin-bottom: 20px;
+    }
+}
+
+.product-main-image {
+    max-width: 400px; 
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.product-small-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.product-small-image:hover {
+    transform: scale(1.1);
+    border: 2px solid var(--primary-color, #ff7f9e); 
+}
+
+.btn-custom {
+    background-color: #581845 !important; 
+    border-color: #581845 !important;
+    color: white !important;
+}
+.btn-custom:hover {
+    background-color: #793466 !important;
+    border-color: #793466 !important;
+    color: white !important;
+}
+.text-custom-maroon {
+    color: #581845;
+}
+
+.hero-banner {
+    background-color: #581845;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px; 
+}
+
+.cart-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.btn-update-custom-maroon {
+    background-color: #581845 !important; 
+    border-color: #581845 !important;
+    color: white !important;
+}
+.btn-update-custom-maroon:hover {
+    background-color: #793466 !important;
+    border-color: #793466 !important;
+}
+
+.btn-login-custom {
+    background-color: #581845 !important; 
+    border-color: #581845 !important;
+    color: white !important;
+}
+.btn-login-custom:hover {
+    background-color: #793466 !important;
+    border-color: #793466 !important;
+}
+
+.btn-remove-custom {
+    background-color: #dc3545 !important; 
+    border-color: #dc3545 !important;
+    color: white !important;
+}
+.btn-remove-custom:hover {
+    background-color: #c82333 !important;
+    border-color: #bd2130 !important;
+}
