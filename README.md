@@ -1,13 +1,13 @@
-# 🛒 PHP E-Commerce Website
+# PHP E-Commerce Website
 
 A complete dynamic **E-Commerce Web Application** built using **PHP, MySQL, Bootstrap, and JavaScript**.  
 This project includes both **User Panel** and **Admin Panel** with full functionality like product management, order system, and user management.
 
 ---
 
-## 🚀 Features
+# Features
 
-### 👤 User Side
+# User Side
 - User Registration & Login System
 - Browse Products
 - Add to Cart
@@ -15,7 +15,7 @@ This project includes both **User Panel** and **Admin Panel** with full function
 - Order History
 - Profile Management
 
-### 🛠️ Admin Panel
+# Admin Panel
 - Dashboard Overview
 - Manage Products (Add / Edit / Delete)
 - Manage Categories & Brands
@@ -26,7 +26,7 @@ This project includes both **User Panel** and **Admin Panel** with full function
 
 ---
 
-## 🧰 Technologies Used
+# Technologies Used
 
 - **Frontend:** HTML, CSS, Bootstrap, JavaScript  
 - **Backend:** PHP (Core PHP)  
@@ -35,7 +35,7 @@ This project includes both **User Panel** and **Admin Panel** with full function
 
 ---
 
-## 📂 Project Structure
+# Project Structure
 php_e-commerce/
 │
 ├── admin/ # Admin panel files
@@ -45,3 +45,6 @@ php_e-commerce/
 ├── css/ # Stylesheets
 ├── js/ # JavaScript files
 └── index.php # Main entry point
+
+# Author
+- Aditya Verma
