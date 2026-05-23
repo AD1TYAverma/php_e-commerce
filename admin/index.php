@@ -2,7 +2,7 @@
 session_start();
 include('../includes/connect.php');
 
-// 🔐 LOGIN CHECK
+
 if (!isset($_SESSION['admin_username'])) {
     header("Location: admin.login.php");
     exit();
