@@ -39,7 +39,7 @@ function get_products(){
         $product_image1 = $row['product_image1'];
         $product_price = $row['product_price'];
         echo "<div class='col-md-4 mb-4'>
-                    <div class='card'>
+                    <div class='card h-100'>
                         <img src='admin/product_images/$product_image1' class='card-img-top' style='height:250px;' alt='...'>
                         <div class='card-body'>
                             <h5 class='card-title'>$product_title</h5>
