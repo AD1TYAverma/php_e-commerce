@@ -376,7 +376,8 @@ function total_price(){
             $total+=$row['product_price']*$row['quantity'];
         }
     }else{
-        if(isset($_SESSION['cart']) && isset($_SESSION['cart'])>0){
+        // if(isset($_SESSION['cart']) && isset($_SESSION['cart'])>0){
+            if(isset($_SESSION['cart']) && count($_SESSION['cart']) > 0){
             $product_ids = array_keys($_SESSION['cart']);
             $placeholder = implode(',', array_fill(0, count($product_ids),'?'));
             $query = "SELECT product_id, product_price FROM products WHERE product_id IN ($placeholder)";
